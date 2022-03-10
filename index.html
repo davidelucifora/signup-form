@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Sign Up to the Coffe Club!</title>
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <div id="logo-container">
+                <div id="logo"><img src="logo.png" alt="coffee" width="90px" height="80px"></div>
+                <h1 class="title">Sign Up Today</h1>
+            </div>
+        </div>
+        <div id="right">
+            <div id="text-above-form"><p id="text-above-form">
+                Lorem ipsum dolor sit amet, this is a paragraph Lorem ipsum dolor sit amet,
+                    this is a paragraph Lorem ipsum dolor sit amet,
+                    this is a paragraph Lorem ipsum dolor sit amet, this is a paragraph.
+            </p> 
+
+            </div>
+            <div id="form-container">
+                <h2 id="form-title">Let's do this!</h2>
+                <form action="submit">
+                    <div class="form-group">
+                        <label for="first-name" class="form-label">First Name</label>
+                        <input type="text" id="first-name" class="form-input-text" name="first_name" required>
+                        <label for="last-name" class="form-label">Last Name</label>
+                        <input type="text" id="last-name" class="form-input-text" name="last_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-input-text" name="email" required>
+                        <label for="phone-number" class="form-label">Phone</label>
+                        <input type="text" id="phone-number" class="form-input-text" name="phone-number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" class="form-input-text" name="pwd" pattern="[0-9a-fA-F]{4,8}" required>
+                        <label for="password-confirm" class="form-label" required>Confirm Password</label>
+                        <input type="password" id="password-confirm" class="form-input-text" name="confirm_pwd" pattern="[0-9a-fA-F]{4,8}" required>
+                    </div>
+                    <button type="submit" id="submit">Sign Up</button>
+                </form>
+
+            </div>
+
+            <p id="sign-up-paragraph">Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+/*Insert Color Variables Here:*/
+:root { /* CSS HEX */
+--honeydew: #e8f7eeff;
+--raisin-black: #262730ff;
+--coffee: #b29072ff;
+--dark-green: #3c5a14ff;
+--venetian-red: #bf211eff;}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    padding:0;
+    margin:0;
+}
+
+#container{
+    display:flex;
+    min-height:100vh;
+    margin:0;
+    padding:0;
+
+}
+#left{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:40vw;
+    background:url('bg-image.jpg');
+    background-size: cover;
+}
+#logo-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    width:100%;
+    background-color:rgba(0,0,0,0.4);
+    height:15%;
+    color:var(--honeydew);
+    
+}
+#logo{
+    margin-right:1rem;
+}
+
+#right{
+    width:60vw;
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    padding:2rem;
+}
+
+#text-above-form{
+    font-size:1.75rem;
+    color:var(--raisin-black);
+}
+
+#form-container{
+    padding:3rem 0;
+    display:flex;
+    justify-content:center;
+    flex-flow:column wrap;   
+}
+.form-group{
+    display:flex;
+    width:80%;
+    margin:2.5rem 1rem;
+    align-items:center;
+}
+label{
+    width:25%;
+}
+input{
+    height:2rem;
+    margin-right:1rem;
+    width:70%;
+    transition:all 0.2s linear;
+}
+input:focus{
+    box-shadow:2px 2px 2px rgba(0,0,0,0.4);
+    
+}
+
+#submit{    
+    padding:1rem 2rem;
+    background-color:var(--coffee);
+    color:white;
+    border:none;
+    outline:none;
+    border:none;
+    font-size:1.5rem;
+    margin-top:3rem;
+    cursor:pointer;
+    border-radius:5px;
+    transition:all 0.2s linear;
+    box-shadow:2px 2px 2px rgba(0,0,0,0.4);
+    
+}
+#submit:hover{
+    background-color:var(--raisin-black);
+    color:var(--honeydew);
+}
+
+#sign-up-paragraph a {
+    text-decoration:none;
+    font-weight:800;
+    color:var(--dark-green);
+    transition: all 0.2s linear;
+}
+#sign-up-paragraph a:hover {
+    color:var(--coffee);
+}
+label{
+    text-transform:uppercase;
+    color:var(--coffee);
+    font-weight:800;
+}
+
+/*Portrait Phone*/
+@media (max-width: 575.98px) {
+
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+}
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+}
